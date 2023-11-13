@@ -9,7 +9,6 @@ import toast, { Toaster } from "react-hot-toast";
 
 const AssigneeSelect = ({ issue }: { issue: Issue }) => {
   const { data: users, error, isLoading } = useUsers();
-
   if (isLoading) return <Skeleton />;
 
   if (error) return null;
